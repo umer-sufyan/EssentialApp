@@ -13,7 +13,26 @@
 		18ADDA5927BE5AA0003BBD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ADDA5727BE5AA0003BBD5A /* Main.storyboard */; };
 		18ADDA5B27BE5AA2003BBD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ADDA5A27BE5AA2003BBD5A /* Assets.xcassets */; };
 		18ADDA5E27BE5AA2003BBD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ADDA5C27BE5AA2003BBD5A /* LaunchScreen.storyboard */; };
+		18ADDA8627BE5C11003BBD5A /* EssentialFeedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADDA8427BE5C11003BBD5A /* EssentialFeedFramework.framework */; };
+		18ADDA8727BE5C11003BBD5A /* EssentialFeedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADDA8427BE5C11003BBD5A /* EssentialFeedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18ADDA8827BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */; };
+		18ADDA8927BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18ADDA8A27BE5C11003BBD5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18ADDA8927BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework in Embed Frameworks */,
+				18ADDA8727BE5C11003BBD5A /* EssentialFeedFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18ADDA4E27BE5AA0003BBD5A /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +43,8 @@
 		18ADDA5A27BE5AA2003BBD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18ADDA5D27BE5AA2003BBD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18ADDA5F27BE5AA2003BBD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ADDA8427BE5C11003BBD5A /* EssentialFeedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedFramworkiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADDA8827BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework in Frameworks */,
+				18ADDA8627BE5C11003BBD5A /* EssentialFeedFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 			children = (
 				18ADDA5027BE5AA0003BBD5A /* EssentialApp */,
 				18ADDA4F27BE5AA0003BBD5A /* Products */,
+				18ADDA8327BE5C11003BBD5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +91,15 @@
 			path = EssentialApp;
 			sourceTree = "<group>";
 		};
+		18ADDA8327BE5C11003BBD5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18ADDA8427BE5C11003BBD5A /* EssentialFeedFramework.framework */,
+				18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +110,7 @@
 				18ADDA4A27BE5AA0003BBD5A /* Sources */,
 				18ADDA4B27BE5AA0003BBD5A /* Frameworks */,
 				18ADDA4C27BE5AA0003BBD5A /* Resources */,
+				18ADDA8A27BE5C11003BBD5A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
