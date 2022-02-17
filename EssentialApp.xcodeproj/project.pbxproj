@@ -19,6 +19,16 @@
 		18ADDA8927BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18ADDA9927BE62CB003BBD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18ADDA4627BE5AA0003BBD5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ADDA4D27BE5AA0003BBD5A;
+			remoteInfo = EssentialApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		18ADDA8A27BE5C11003BBD5A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -45,6 +55,8 @@
 		18ADDA5F27BE5AA2003BBD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18ADDA8427BE5C11003BBD5A /* EssentialFeedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ADDA8527BE5C11003BBD5A /* EssentialFeedFramworkiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedFramworkiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ADDA9427BE62CA003BBD5A /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ADDA9827BE62CA003BBD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18ADDA9127BE62CA003BBD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				18ADDA5027BE5AA0003BBD5A /* EssentialApp */,
+				18ADDA9527BE62CA003BBD5A /* EssentialAppTests */,
 				18ADDA4F27BE5AA0003BBD5A /* Products */,
 				18ADDA8327BE5C11003BBD5A /* Frameworks */,
 			);
@@ -73,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				18ADDA4E27BE5AA0003BBD5A /* EssentialApp.app */,
+				18ADDA9427BE62CA003BBD5A /* EssentialAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +121,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18ADDA9527BE62CA003BBD5A /* EssentialAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18ADDA9827BE62CA003BBD5A /* Info.plist */,
+			);
+			path = EssentialAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +150,24 @@
 			productReference = 18ADDA4E27BE5AA0003BBD5A /* EssentialApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18ADDA9327BE62CA003BBD5A /* EssentialAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ADDA9D27BE62CB003BBD5A /* Build configuration list for PBXNativeTarget "EssentialAppTests" */;
+			buildPhases = (
+				18ADDA9027BE62CA003BBD5A /* Sources */,
+				18ADDA9127BE62CA003BBD5A /* Frameworks */,
+				18ADDA9227BE62CA003BBD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18ADDA9A27BE62CB003BBD5A /* PBXTargetDependency */,
+			);
+			name = EssentialAppTests;
+			productName = EssentialAppTests;
+			productReference = 18ADDA9427BE62CA003BBD5A /* EssentialAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +179,10 @@
 				TargetAttributes = {
 					18ADDA4D27BE5AA0003BBD5A = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					18ADDA9327BE62CA003BBD5A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 18ADDA4D27BE5AA0003BBD5A;
 					};
 				};
 			};
@@ -149,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				18ADDA4D27BE5AA0003BBD5A /* EssentialApp */,
+				18ADDA9327BE62CA003BBD5A /* EssentialAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +213,13 @@
 				18ADDA5E27BE5AA2003BBD5A /* LaunchScreen.storyboard in Resources */,
 				18ADDA5B27BE5AA2003BBD5A /* Assets.xcassets in Resources */,
 				18ADDA5927BE5AA0003BBD5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ADDA9227BE62CA003BBD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +236,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18ADDA9027BE62CA003BBD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18ADDA9A27BE62CB003BBD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ADDA4D27BE5AA0003BBD5A /* EssentialApp */;
+			targetProxy = 18ADDA9927BE62CB003BBD5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18ADDA5727BE5AA0003BBD5A /* Main.storyboard */ = {
@@ -353,6 +427,46 @@
 			};
 			name = Release;
 		};
+		18ADDA9B27BE62CB003BBD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D86A526GH8;
+				INFOPLIST_FILE = EssentialAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globridgetech.EssentialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/EssentialApp";
+			};
+			name = Debug;
+		};
+		18ADDA9C27BE62CB003BBD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D86A526GH8;
+				INFOPLIST_FILE = EssentialAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globridgetech.EssentialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/EssentialApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +484,15 @@
 			buildConfigurations = (
 				18ADDA6327BE5AA2003BBD5A /* Debug */,
 				18ADDA6427BE5AA2003BBD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ADDA9D27BE62CB003BBD5A /* Build configuration list for PBXNativeTarget "EssentialAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ADDA9B27BE62CB003BBD5A /* Debug */,
+				18ADDA9C27BE62CB003BBD5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
