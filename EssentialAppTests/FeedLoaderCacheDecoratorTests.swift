@@ -23,7 +23,7 @@ class FeedLoaderCacheDecoratorTests: XCTestCase, FeedLoaderTestCase {
     
     func test_load_deliversFeedOnLoaderSuccess() {
         let feed = uniqueFeed()
-        let sut = makeSUT(loaderResult: .success(feed))0
+        let sut = makeSUT(loaderResult: .success(feed))
         
         expect(sut, toCompleteWith: .success(feed))
     }
