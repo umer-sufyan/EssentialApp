@@ -28,7 +28,6 @@ class DebuggingSceneDelegate: SceneDelegate {
 }
 
 private class DebuggingHTTPClient: HTTPClient {
-    
     private class Task: HTTPClientTask {
         func cancel() {}
     }
