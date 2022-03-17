@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1843AF5D27E34CA20036B183 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AF5C27E34CA20036B183 /* UIView+TestHelpers.swift */; };
 		187A1FC527C2205D008D367A /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1FC427C2205D008D367A /* SceneDelegateTests.swift */; };
 		18995F2827C0BF6900481D6B /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18995F2727C0BF6900481D6B /* FeedLoaderCacheDecoratorTests.swift */; };
 		18995F2B27C0C00C00481D6B /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18995F2A27C0C00C00481D6B /* FeedLoaderStub.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1843AF5C27E34CA20036B183 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		187A1FC427C2205D008D367A /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		18995F2727C0BF6900481D6B /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		18995F2A27C0C00C00481D6B /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				18995F4027C0C98200481D6B /* XCTestCase+FeedImageDataLoader.swift */,
 				18D48F2427D0DE330027DADF /* HTTPClientStub.swift */,
 				18D48F2727D0DEBC0027DADF /* InMemoryFeedStore.swift */,
+				1843AF5C27E34CA20036B183 /* UIView+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				18D48F0227D0CC9E0027DADF /* FeedUIIntegrationTests+Assertions.swift in Sources */,
 				18D48F2527D0DE330027DADF /* HTTPClientStub.swift in Sources */,
 				18FFB8B627BFB2F1004872B5 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
+				1843AF5D27E34CA20036B183 /* UIView+TestHelpers.swift in Sources */,
 				18FFB8AB27BFAD76004872B5 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				18995F2B27C0C00C00481D6B /* FeedLoaderStub.swift in Sources */,
 				18D48F1E27D0D1C30027DADF /* FeedAcceptanceTests.swift in Sources */,
