@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18099EB927FC20B5004E3893 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18099EB827FC20B5004E3893 /* CombineHelpers.swift */; };
 		1843AF5D27E34CA20036B183 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AF5C27E34CA20036B183 /* UIView+TestHelpers.swift */; };
 		187A1FC527C2205D008D367A /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1FC427C2205D008D367A /* SceneDelegateTests.swift */; };
 		18ADDA5227BE5AA0003BBD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADDA5127BE5AA0003BBD5A /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18099EB827FC20B5004E3893 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		1843AF5C27E34CA20036B183 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		187A1FC427C2205D008D367A /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		18ADDA4E27BE5AA0003BBD5A /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				18ADDA5A27BE5AA2003BBD5A /* Assets.xcassets */,
 				18ADDA5C27BE5AA2003BBD5A /* LaunchScreen.storyboard */,
 				18ADDA5F27BE5AA2003BBD5A /* Info.plist */,
+				18099EB827FC20B5004E3893 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				18ADDA5627BE5AA0003BBD5A /* ViewController.swift in Sources */,
 				18D48EE827D0CC0C0027DADF /* FeedUIComposer.swift in Sources */,
+				18099EB927FC20B5004E3893 /* CombineHelpers.swift in Sources */,
 				18ADDA5227BE5AA0003BBD5A /* AppDelegate.swift in Sources */,
 				18D48EE627D0CC0C0027DADF /* FeedViewAdapter.swift in Sources */,
 				18ADDA5427BE5AA0003BBD5A /* SceneDelegate.swift in Sources */,
