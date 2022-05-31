@@ -45,10 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene as! UIWindowScene)
         
-        
         configureWindow()
-        
-        
         
     }
     
