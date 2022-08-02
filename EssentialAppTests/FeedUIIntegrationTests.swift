@@ -17,12 +17,8 @@ final class FeedUIIntegrationTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        let bundle = Bundle(for: FeedPresenter.self)
-        let localizedKey = "FEED_VIEW_TITLE"
-        let localizedTitle = bundle.localizedString(forKey: localizedKey, value: nil, table: "Feed")
         
-        XCTAssertNotEqual(localizedKey, localizedTitle, "Missing localized string for key: \(localizedKey)")
-        XCTAssertEqual(sut.title, localizedTitle)
+        XCTAssertEqual(sut.title, feedTitle)
     }
     
     func test_loadFeedActions_requestFeedFromLoader() {
@@ -305,7 +301,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         
         
         loader.completeFeedLoadingWithError(at: 0)
-        XCTAssertEqual(sut.errorMessage, localized("GENERIC_CONNECTION_ERROR"))
+        XCTAssertEqual(sut.errorMessage, loadError)
         
         sut.simulateUserInitiatedFeedReload()
         XCTAssertEqual(sut.errorMessage, nil)
