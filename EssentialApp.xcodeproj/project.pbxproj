@@ -23,7 +23,7 @@
 		18D48EE727D0CC0C0027DADF /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EE127D0CC0B0027DADF /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		18D48EE827D0CC0C0027DADF /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EE227D0CC0B0027DADF /* FeedUIComposer.swift */; };
 		18D48EE927D0CC0C0027DADF /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EE327D0CC0B0027DADF /* WeakRefVirtualProxy.swift */; };
-		18D48EEA27D0CC0C0027DADF /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EE427D0CC0C0027DADF /* FeedLoaderPresentationAdapter.swift */; };
+		18D48EEA27D0CC0C0027DADF /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EE427D0CC0C0027DADF /* LoadResourcePresentationAdapter.swift */; };
 		18D48EFB27D0CC9E0027DADF /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EF227D0CC9D0027DADF /* UIButton+TestHelpers.swift */; };
 		18D48EFC27D0CC9E0027DADF /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EF327D0CC9D0027DADF /* UIRefreshControl+TestHelpers.swift */; };
 		18D48EFD27D0CC9E0027DADF /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D48EF427D0CC9D0027DADF /* FeedImageCell+TestHelpers.swift */; };
@@ -85,7 +85,7 @@
 		18D48EE127D0CC0B0027DADF /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		18D48EE227D0CC0B0027DADF /* FeedUIComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		18D48EE327D0CC0B0027DADF /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
-		18D48EE427D0CC0C0027DADF /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		18D48EE427D0CC0C0027DADF /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		18D48EF227D0CC9D0027DADF /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
 		18D48EF327D0CC9D0027DADF /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		18D48EF427D0CC9D0027DADF /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				18D48EE227D0CC0B0027DADF /* FeedUIComposer.swift */,
 				18D48EE327D0CC0B0027DADF /* WeakRefVirtualProxy.swift */,
 				18D48EE127D0CC0B0027DADF /* FeedImageDataLoaderPresentationAdapter.swift */,
-				18D48EE427D0CC0C0027DADF /* FeedLoaderPresentationAdapter.swift */,
+				18D48EE427D0CC0C0027DADF /* LoadResourcePresentationAdapter.swift */,
 				18D48EE027D0CC0B0027DADF /* FeedViewAdapter.swift */,
 				18ADDA5127BE5AA0003BBD5A /* AppDelegate.swift */,
 				18ADDA5327BE5AA0003BBD5A /* SceneDelegate.swift */,
@@ -312,7 +312,7 @@
 				18ADDA5427BE5AA0003BBD5A /* SceneDelegate.swift in Sources */,
 				18D48EE727D0CC0C0027DADF /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				18D48EE927D0CC0C0027DADF /* WeakRefVirtualProxy.swift in Sources */,
-				18D48EEA27D0CC0C0027DADF /* FeedLoaderPresentationAdapter.swift in Sources */,
+				18D48EEA27D0CC0C0027DADF /* LoadResourcePresentationAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
