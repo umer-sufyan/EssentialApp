@@ -30,7 +30,7 @@ public final class FeedUIComposer {
                 imageLoader: imageLoader,
                 selection: selection),
             loadingView: WeakRefVirtualProxy(feedController),
-            errorView: WeakRefVirtualProxy(feedController)
+            errorView: WeakRefVirtualProxy(feedController))
         
         return feedController
     }
