@@ -9,7 +9,6 @@ import Combine
 import EssentialFeedFramework
 
 public extension Paginated {
-    
     init(items: [Item], loadMorePublisher: (() -> AnyPublisher<Self, Error>)?) {
         self.init(items: items, loadMore: loadMorePublisher.map { publisher in
             return { completion in
@@ -34,7 +33,6 @@ public extension Paginated {
         }
     }
 }
-
 public extension HTTPClient {
     typealias Publisher = AnyPublisher<(Data, HTTPURLResponse), Error>
     
@@ -50,13 +48,10 @@ public extension HTTPClient {
         .eraseToAnyPublisher()
     }
 }
-
 public extension FeedImageDataLoader {
     typealias Publisher = AnyPublisher<Data, Error>
     
     func loadImageDataPublisher(from url: URL) -> Publisher {
-        var task: FeedImageDataLoaderTask?
-        
         return Deferred {
             Future { completion in
                 completion(Result {
@@ -75,13 +70,11 @@ extension Publisher where Output == Data {
         }).eraseToAnyPublisher()
     }
 }
-
 private extension FeedImageDataCache {
     func saveIgnoringResult(_ data: Data, for url: URL) {
         try? save(data, for: url)
     }
 }
-
 public extension LocalFeedLoader {
     typealias Publisher = AnyPublisher<[FeedImage], Error>
     
@@ -92,13 +85,11 @@ public extension LocalFeedLoader {
         .eraseToAnyPublisher()
     }
 }
-
 extension Publisher {
     func fallback(to fallbackPublisher: @escaping () -> AnyPublisher<Output, Failure>) -> AnyPublisher<Output, Failure> {
         self.catch { _ in fallbackPublisher() }.eraseToAnyPublisher()
     }
 }
-
 extension Publisher {
     func caching(to cache: FeedCache) -> AnyPublisher<Output, Failure> where Output == [FeedImage] {
         handleEvents(receiveOutput: cache.saveIgnoringResult).eraseToAnyPublisher()
@@ -108,7 +99,6 @@ extension Publisher {
         handleEvents(receiveOutput: cache.saveIgnoringResult).eraseToAnyPublisher()
     }
 }
-
 private extension FeedCache {
     func saveIgnoringResult(_ feed: [FeedImage]) {
         save(feed) { _ in }
@@ -118,15 +108,11 @@ private extension FeedCache {
         saveIgnoringResult(page.items)
     }
 }
-
-
-
 extension Publisher {
     func dispatchOnMainQueue() -> AnyPublisher<Output, Failure> {
         receive(on: DispatchQueue.immediateWhenOnMainQueueScheduler).eraseToAnyPublisher()
     }
 }
-
 extension DispatchQueue {
     static var immediateWhenOnMainQueueScheduler: ImmediateWhenOnMainQueueScheduler {
         ImmediateWhenOnMainQueueScheduler.shared
@@ -156,7 +142,6 @@ extension DispatchQueue {
         private func isMainQueue() -> Bool {
             DispatchQueue.getSpecific(key: Self.key) == Self.value
         }
-        
         
         func schedule(options: SchedulerOptions?, _ action: @escaping () -> Void) {
             guard isMainQueue() else {
