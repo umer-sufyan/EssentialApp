@@ -41,16 +41,6 @@ extension InMemoryFeedStore: FeedImageDataStore {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 extension InMemoryFeedStore {
     static var empty: InMemoryFeedStore {
         InMemoryFeedStore()
